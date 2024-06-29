@@ -1,19 +1,19 @@
 const Footer = () => {
   return(
     <div className="bg-blue-primary w-full flex flex-col items-center">
-      <div className="flex w-3/4 max-w-[1280px] py-20 gap-20">
-        <div className="flex flex-col gap-4 w-1/2">
-          <div className="flex flex-row h-fit items-center">
-            <img src="/logo_200.png" className="size-28" />
-            <div>
+      <div className="flex flex-col sm:flex-row w-3/4 max-w-[1280px] py-20 gap-20">
+        <div className="flex flex-col gap-10 sm:gap-4 w-full sm:w-1/2">
+          <div className="flex flex-row items-center">
+            <img src="/logo_200.png" className="size-16 sm:size-28" />
+            <div className="w-full">
               <p className="text-white text-lg">Lingkungan</p>
-              <p className="text-white text-4xl font-medium">Santa Maria Goretti</p>
+              <p className="text-white text-2xl sm:text-4xl font-medium">Santa Maria Goretti</p>
             </div>
           </div>
           <div>
-            <h3 className="text-white text-xl font-medium">Gereja Santo Matias Rasul</h3>
-            <h3 className="text-white text-xl font-medium">Paroki Kosambi Baru</h3>
-            <p className="w-96 text-white text-sm mt-2">Paroki Kosambi Baru Gereja St.Matias Rasul Taman Kosambi Barat blok A ext 1 no.120 Perumahan Kosambi Baru, Jakarta Barat 11750</p>
+            <h3 className="text-white text-2xl sm:text-xl font-medium">Gereja Santo Matias Rasul</h3>
+            <h3 className="text-white text-2xl sm:text-xl font-medium">Paroki Kosambi Baru</h3>
+            <p className="w-88 sm:w-96 text-white text-base sm:text-sm mt-2">Paroki Kosambi Baru Gereja St.Matias Rasul Taman Kosambi Barat blok A ext 1 no.120 Perumahan Kosambi Baru, Jakarta Barat 11750</p>
           </div>
         </div>
         <div className="flex flex-col gap-4">

@@ -4,7 +4,7 @@ const Photos = () => {
       <div className="w-3/4 max-w-[1280px] flex items-center flex-col gap-4">
         <h1 className="text-3xl font-medium text-blue-primary">Galeri</h1>
         <div className="flex flex-col w-full gap-4">
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <div className="w-full">
               <img src="https://cdn.discordapp.com/attachments/1245367927130034199/1256523911873691668/tatib1.jpeg?ex=66811495&is=667fc315&hm=a6065761fd9dd4b3aa8daeee9169d93f96c9a0a05c5e0ba780e26ef2c320dc43&"
               className="object-cover w-full h-56 rounded-lg hover:shadow-2xl hover:shadow-blue-950/50 hover:-translate-y-2 transition-all"/>
@@ -21,15 +21,15 @@ const Photos = () => {
           <div className="flex gap-4">
             <div className="w-full">
               <img src="https://cdn.discordapp.com/attachments/1245367927130034199/1256523912926335056/koor_1.jpeg?ex=66811495&is=667fc315&hm=3a15ea1c5a47ee91722ed3d40aaf3434e3658f8726592d011e52c4f126f26a50&"
-              className="object-cover w-full h-56 rounded-lg hover:shadow-2xl hover:shadow-blue-950/50 hover:-translate-y-2 transition-all"/>
+              className="object-cover w-full h-16 sm:h-56 rounded-lg hover:shadow-2xl hover:shadow-blue-950/50 hover:-translate-y-2 transition-all"/>
             </div>
             <div className="w-full">
               <img src="https://cdn.discordapp.com/attachments/1245367927130034199/1256523912926335056/koor_1.jpeg?ex=66811495&is=667fc315&hm=3a15ea1c5a47ee91722ed3d40aaf3434e3658f8726592d011e52c4f126f26a50&"
-              className="object-cover w-full h-56 rounded-lg hover:shadow-2xl hover:shadow-blue-950/50 hover:-translate-y-2 transition-all"/>
+              className="object-cover w-full h-16 sm:h-56 rounded-lg hover:shadow-2xl hover:shadow-blue-950/50 hover:-translate-y-2 transition-all"/>
             </div>
             <div className="w-full">
               <img src="https://cdn.discordapp.com/attachments/1245367927130034199/1256523912926335056/koor_1.jpeg?ex=66811495&is=667fc315&hm=3a15ea1c5a47ee91722ed3d40aaf3434e3658f8726592d011e52c4f126f26a50&"
-              className="object-cover w-full h-56 rounded-lg hover:shadow-2xl hover:shadow-blue-950/50 hover:-translate-y-2 transition-all"/>
+              className="object-cover w-full h-16 sm:h-56 rounded-lg hover:shadow-2xl hover:shadow-blue-950/50 hover:-translate-y-2 transition-all"/>
             </div>
           </div>
         </div>
