@@ -35,7 +35,11 @@ const MainContent = () => {
       </div>
       <div className="bg-blue-secondary min-h-96 w-full flex justify-center">
         <div className="w-3/4 max-w-[1280px] h-96 flex justify-center items-center gap-8">
-          <div className="size-72 bg-slate-200 rounded-xl animate-pulse flex-shrink-0" />
+          <div>
+            <img src="https://cdn.discordapp.com/attachments/1245367927130034199/1256572908252172378/keling_compress.png?ex=66814237&is=667ff0b7&hm=febeab07262d6378237c6a17587a8702bdd6916d618e344096f1e2d6a2c658eb&"
+            className="w-72 rounded-xl object-cover" />
+          </div>
+          {/* <div className="size-72 bg-slate-200 rounded-xl animate-pulse flex-shrink-0" /> */}
           <div className="flex flex-col gap-4">
             <div>
               <h1 className="text-white text-5xl max-w-[30rem] leading-tight font-serif font-semibold">&quot;Aku Diberkati, Kamu Diberkati, Kita Semua Diberkati.&quot;</h1>

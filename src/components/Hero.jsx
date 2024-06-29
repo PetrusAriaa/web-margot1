@@ -1,7 +1,7 @@
 const HeroSection = () => {
   return (
     <div className="w-full">
-      <img src="https://cdn.discordapp.com/attachments/1245367927130034199/1256523911051350096/hero_thumb.png?ex=66811495&is=667fc315&hm=3dfd0b3bc3fbc0eb81bfaa366ea5bda0edb2fbb260542cac02443f77499e7c4f&"
+      <img src="https://cdn.discordapp.com/attachments/1245367927130034199/1256567694631637102/hero_thumb_compressed.png?ex=66813d5c&is=667febdc&hm=403d0e4c104b4e5a15f4ee14956e5da411eea440251559deebe5ecb3b12277b9&"
       className="object-cover h-96 w-full"/>
     </div>
   )
