@@ -1,13 +1,10 @@
-import Logo200 from "../../public/logo_200.png";
-import Instagram from "../../public/instagram-icon.svg"
-
 const Footer = () => {
   return(
     <div className="bg-blue-primary w-full flex flex-col items-center">
       <div className="flex w-3/4 max-w-[1280px] py-20 gap-20">
         <div className="flex flex-col gap-4 w-1/2">
           <div className="flex flex-row h-fit items-center">
-            <img src={Logo200} className="size-28" />
+            <img src="/logo_200.png" className="size-28" />
             <div>
               <p className="text-white text-lg">Lingkungan</p>
               <p className="text-white text-4xl font-medium">Santa Maria Goretti</p>
@@ -27,7 +24,7 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-medium text-white">Media Sosial</h3>
             <a href="https://www.instagram.com/lingkungan_mariagoretti" target="_blank">
-              <div className="p-2 bg-white w-fit rounded-full hover:bg-yellow-accent"><img src={Instagram} className="w-6"/></div>
+              <div className="p-2 bg-white w-fit rounded-full hover:bg-yellow-accent"><img src="/instagram-icon.svg" className="w-6"/></div>
             </a>
           </div>
         </div>
