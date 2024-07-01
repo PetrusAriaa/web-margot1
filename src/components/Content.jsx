@@ -36,7 +36,7 @@ const MainContent = () => {
       <div className="bg-blue-secondary min-h-screen sm:min-h-96 py-28 sm:py-0 sm:h-fit w-full flex justify-center">
         <div className="w-3/4 max-w-[1280px] h-screen sm:h-96 flex flex-col sm:flex-row justify-center items-center gap-8">
           <div>
-            <img src="https://cdn.discordapp.com/attachments/1245367927130034199/1256572908252172378/keling_compress.png?ex=66814237&is=667ff0b7&hm=febeab07262d6378237c6a17587a8702bdd6916d618e344096f1e2d6a2c658eb&"
+            <img src="https://storage.googleapis.com/margot-web/keling_compress.png"
             className="w-64 sm:w-72 rounded-xl object-cover" />
           </div>
           {/* <div className="size-72 bg-slate-200 rounded-xl animate-pulse flex-shrink-0" /> */}
