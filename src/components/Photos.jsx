@@ -7,7 +7,7 @@ const Photos = () => {
         <h1 className="text-3xl font-medium text-blue-primary">Galeri</h1>
         <div className="flex flex-col w-full gap-4">
           <div className="flex flex-col sm:flex-row gap-4">
-            <div className="w-full bg-red-500/25 flex">
+            <div className="w-full flex">
               <Image isZoomed src="https://storage.googleapis.com/margot-web/tatib1.jpeg" classNames={{wrapper: "min-w-full", img: "h-56 object-cover w-full"}}/>
             </div>
             <div className="w-full">
