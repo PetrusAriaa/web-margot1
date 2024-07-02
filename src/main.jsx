@@ -1,14 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import BaseApp from './BaseApp.jsx'
+import BaseView from './BaseView.jsx'
 import './index.css'
-import Navbar from './components/Navbar.jsx'
-import Footer from './components/Footer.jsx'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <BaseView content={<BaseApp />} />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Navbar />
-    <App />
-    <Footer />
+    <RouterProvider router={router} />
   </React.StrictMode>
 )
