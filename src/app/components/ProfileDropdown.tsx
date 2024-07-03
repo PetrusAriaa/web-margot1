@@ -32,12 +32,8 @@ const ProfileDropdown = () => {
           'data-[hover=true]:text-blue-secondary',
         ]
       }}>
-        <DropdownItem key='sejarah'>
-          <Link href='/sejarah'>Sejarah</Link>
-        </DropdownItem>
-        <DropdownItem key='nama_pelindung'>
-          <Link href='/maria-goretti'>Nama Pelindung</Link>
-        </DropdownItem>
+        <DropdownItem as={Link} href='/sejarah' key='sejarah'>Sejarah</DropdownItem>
+        <DropdownItem as={Link} href='/maria-goretti' key='nama_pelindung'>Nama Pelindung</DropdownItem>
         <DropdownItem key='pengurus'>Pengurus Lingkungan</DropdownItem>
         <DropdownItem key='statistik'>Statistik</DropdownItem>
       </DropdownMenu>

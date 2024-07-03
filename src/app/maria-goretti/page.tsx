@@ -1,4 +1,10 @@
 import { Image, Divider } from "@nextui-org/react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nama Pelindung - Lingkungan St. Maria Goretti Paroki Kosambi Baru",
+  description: "Website Lingkungan Santa Maria Goretti Paroki Kosambi Baru Gereja Santo Matias Rasul",
+}
 
 const MariaGorettiPage = () => {
   return (
