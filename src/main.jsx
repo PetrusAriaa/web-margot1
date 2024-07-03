@@ -1,14 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {NextUIProvider} from '@nextui-org/react'
-import BaseApp from './BaseApp.jsx'
-import BaseView from './BaseView.jsx'
-import './index.css'
-import MariaGorettiPage from './pages/MariaGoretti.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
+} from "react-router-dom"
+import './index.css'
+
+import BaseApp from './BaseApp.jsx'
+import BaseView from './BaseView.jsx'
+import Pages from './pages/index.jsx'
 
 
 const router = createBrowserRouter([
@@ -18,7 +19,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/maria-goretti",
-    element: <BaseView content={<MariaGorettiPage />} />
+    element: <BaseView content={<Pages.MariaGorettiPage />} />
+  },
+  {
+    path: "/sejarah",
+    element: <BaseView content={<Pages.SejarahPage />} />
   }
 ]);
 

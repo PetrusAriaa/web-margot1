@@ -30,7 +30,7 @@ const Photos = () => {
           </div>
         </div>
         <div>
-          <button className="border-2 border-blue-primary px-4 py-2 rounded-lg font-medium hover:bg-blue-primary hover:text-white transition-colors">Kunjungi Galeri</button>
+          <button disabled className="disabled:cursor-not-allowed border-2 border-blue-primary px-4 py-2 rounded-lg font-medium hover:bg-blue-primary hover:text-white transition-colors">Kunjungi Galeri</button>
         </div>
       </div>
     </div>

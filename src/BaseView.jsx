@@ -1,10 +1,10 @@
-import Navbar from './components/Navbar.jsx'
+import MyNavbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 
 const BaseView = ({content}) => {
   return (
     <>
-      <Navbar />
+      <MyNavbar />
       {content}
       <Footer />
     </>

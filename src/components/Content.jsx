@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const MainContent = () => {
   return (
     <div>
@@ -46,7 +48,9 @@ const MainContent = () => {
               <p className="text-white">Mengenal Lingkungan St. Maria Goretti Lebih Dekat...</p>
             </div>
             <div className="flex justify-end">
-              <button className="px-4 py-2 border-white border-2 rounded-lg text-white hover:bg-white hover:text-blue-primary transition-colors active:scale-95">Kunjungi Profil</button>
+              <Link to='/sejarah'>
+                <button className="px-4 py-2 border-white border-2 rounded-lg text-white hover:bg-white hover:text-blue-primary transition-colors active:scale-95">Kunjungi Profil</button>
+              </Link>
             </div>
           </div>
         </div>
