@@ -1,3 +1,4 @@
+import { Image } from "@nextui-org/react";
 import Link from "next/link";
 
 const MainContent = () => {
@@ -37,11 +38,10 @@ const MainContent = () => {
       </div>
       <div className="bg-blue-secondary min-h-screen sm:min-h-96 py-28 sm:py-0 sm:h-fit w-full flex justify-center">
         <div className="w-3/4 max-w-[1280px] h-screen sm:h-96 flex flex-col sm:flex-row justify-center items-center gap-8">
-          <div>
-            <img src="https://storage.googleapis.com/margot-web/keling_compress.png"
-            className="w-64 sm:w-72 rounded-xl object-cover" />
-          </div>
-          {/* <div className="size-72 bg-slate-200 rounded-xl animate-pulse flex-shrink-0" /> */}
+          <Image src="https://storage.googleapis.com/margot-web/keling_compress.png"
+            alt="Ketua Lingkungan Maria Goretti 1" title="Ketua Lingkungan"
+            className="w-64 sm:w-72" loading="lazy"
+          />
           <div className="flex flex-col gap-4">
             <div>
               <h1 className="text-white text-5xl max-w-[30rem] leading-tight font-serif font-semibold">&quot;Aku Diberkati, Kamu Diberkati, Kita Semua Diberkati.&quot;</h1>
