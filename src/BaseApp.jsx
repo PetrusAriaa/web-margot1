@@ -2,7 +2,7 @@ import MainContent from './components/Content'
 import HeroSection from './components/Hero'
 import Photos from './components/Photos'
 
-function App() {
+function BaseApp() {
   return (
     <div className='flex flex-col'>
       <div>
@@ -14,4 +14,4 @@ function App() {
   )
 }
 
-export default App
+export default BaseApp;
