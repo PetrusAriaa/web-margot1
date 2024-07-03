@@ -1,5 +1,5 @@
 const Footer = () => {
-  return(
+  return (
     <div className="bg-blue-primary w-full flex flex-col items-center">
       <div className="flex flex-col sm:flex-row w-3/4 max-w-[1280px] py-20 gap-20">
         <div className="flex flex-col gap-10 sm:gap-4 w-full sm:w-1/2">
@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <h3 className="text-xl font-medium text-white">Media Sosial</h3>
             <a href="https://www.instagram.com/lingkungan_mariagoretti" target="_blank">
-              <div className="p-2 bg-white w-fit rounded-full hover:bg-yellow-accent"><img src="/instagram-icon.svg" className="w-6"/></div>
+              <div className="p-2 bg-white w-fit rounded-full hover:bg-yellow-accent"><img src="/instagram-icon.svg" className="w-6" /></div>
             </a>
           </div>
         </div>
