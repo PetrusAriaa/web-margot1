@@ -25,7 +25,7 @@ const HeroSection = () => {
               radius='none'
             src='https://storage.googleapis.com/margot-web/hero_thumb_compressed.png'/>
           </SwiperSlide>
-          <SwiperSlide className='bg-red-500'>
+          <SwiperSlide>
             <Image
               className='w-full'
               alt='swiper-image'
