@@ -15,9 +15,9 @@ const ProfileDropdown = () => {
 
   return (
     <Dropdown showArrow radius='sm' onOpenChange={() => setIsOpen(true)} onClose={() => setIsOpen(false)}>
-      <NavbarItem>
+      <NavbarItem className="hidden lg:block">
         <DropdownTrigger>
-          <button className="flex items-center gap-1 text-blue-primary hover:text-blue-secondary font-medium transition-colors focus:outline-none">
+          <button className="text-sm md:text-base flex items-center gap-1 text-blue-primary hover:text-blue-secondary font-medium transition-colors focus:outline-none">
             <p>
               PROFIL
             </p>
