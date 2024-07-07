@@ -14,7 +14,9 @@ const config: Config = {
       colors: {
         "blue-primary": "#1E3B85",
         "blue-secondary": "#6486DE",
-        "yellow-accent": "#FFC327"
+        "yellow-accent": "#FFC327",
+        "neutral-black": "#0C1837",
+        "neutral-white": '#E7EAF3',
       }
     },
   },
