@@ -1,7 +1,46 @@
-import { Image } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
+import Image from "next/image";
 import Link from "next/link";
+import { FC, HTMLAttributes } from "react";
+
+interface ButtonComponentProps extends HTMLAttributes<HTMLButtonElement> {
+  width?: "fit" | "full";
+  content: string
+}
+
+const ButtonPrimary: FC<ButtonComponentProps> = ({ width = "full", content}) => {
+  return(
+    <div>
+      <Button className={"rounded px-16 bg-neutral-white text-neutral-black " + 
+        (width === "fit" ? "w-fit" : "w-full")}>
+        {content}
+      </Button>
+    </div>
+  )
+}
 
 const MainContent = () => {
+  return (
+    <div className="w-full md:h-[75vh] md:max-h-[1140px] flex justify-center">
+      <div className="h-full w-[40%] bg-red-500 relative">
+        <Image fill src="https://storage.googleapis.com/margot-web/keling_compress.png" alt="" className="object-cover select-none"/>
+      </div>
+      <div className="w-[60%] bg-blue-primary pl-24 pb-24">
+        <div className="h-full w-[85%] max-w-[1280px] flex flex-col justify-end gap-8">
+          <p className="text-5xl font-bold text-neutral-white leading-tight selection:bg-neutral-white selection:text-blue-primary">
+            &quot;Aku Diberkati, Kamu Diberkati, Kita Semua Diberkati.&quot;
+          </p>
+          <p className="text-lg text-neutral-white leading-tight selection:bg-neutral-white selection:text-blue-primary">
+            Mengenal Lingkungan St. Maria Goretti Lebih Dekat...
+          </p>
+          <ButtonPrimary width="fit" content="Kunjungi Profil" />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const MainContent_unused = () => {
   return (
     <div>
       <div className="bg-white min-h-96 w-full flex flex-col items-center justify-center gap-8 py-14 sm:py-28">
@@ -36,7 +75,7 @@ const MainContent = () => {
           </div>
         </div>
       </div>
-      <div className="bg-blue-secondary min-h-screen sm:min-h-96 py-28 sm:py-0 sm:h-fit w-full flex justify-center">
+      {/* <div className="bg-blue-secondary min-h-screen sm:min-h-96 py-28 sm:py-0 sm:h-fit w-full flex justify-center">
         <div className="w-3/4 max-w-[1280px] h-screen sm:h-96 flex flex-col sm:flex-row justify-center items-center gap-8">
           <Image src="https://storage.googleapis.com/margot-web/keling_compress.png"
             alt="Ketua Lingkungan Maria Goretti 1" title="Ketua Lingkungan"
@@ -54,7 +93,7 @@ const MainContent = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
