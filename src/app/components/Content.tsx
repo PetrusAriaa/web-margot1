@@ -19,11 +19,11 @@ const ButtonPrimary: FC<ButtonComponentProps> = ({ width = "full", content}) => 
   )
 }
 
-const MainContent = () => {
+const TentangLingkungan = () => {
   return (
     <div className="w-full md:h-[75vh] md:max-h-[1140px] flex justify-center">
       <div className="h-full w-[40%] bg-red-500 relative">
-        <Image fill src="https://storage.googleapis.com/margot-web/keling_compress.png" alt="" className="object-cover select-none"/>
+        <Image fill src="https://storage.googleapis.com/margot-web/keling_compress.png" alt="" className="object-cover select-none" />
       </div>
       <div className="w-[60%] bg-blue-primary pl-24 pb-24">
         <div className="h-full w-[85%] max-w-[1280px] flex flex-col justify-end gap-8">
@@ -36,6 +36,70 @@ const MainContent = () => {
           <ButtonPrimary width="fit" content="Kunjungi Profil" />
         </div>
       </div>
+    </div>
+  )
+}
+
+const HeaderTemplate = () => {
+  return (
+    <div className="flex flex-col items-center gap-4 py-2 mt-4 mb-28">
+      <div>
+        <h1 className="text-5xl text-blue-primary text-center">Jadwal <span className="font-bold">Ekaristi</span></h1>
+        <p className="text-2xl text-blue-primary text-center">Gereja Santo Matias Rasul Kosambi Baru</p>
+      </div>
+      <div className="h-[6px] w-14 bg-blue-primary" />
+    </div>
+  )
+}
+
+const JadwalMisa = () => {
+  return (
+    <div className="w-full flex justify-center bg-neutral-white h-screen max-h-[1280px] py-20">
+      <div className="w-full max-w-prose h-fit">
+        <HeaderTemplate />
+        <div className="flex flex-row justify-between">
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col items-start gap-2">
+              <h2 className="text-lg text-blue-secondary font-bold">Misa Harian</h2>
+              <div>
+                <h3 className="text-lg font-semibold">Senin, Rabu, Jumat</h3>
+                <li className="list-disc">19.00 WIB</li>
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-2">
+              <h2 className="text-lg text-blue-secondary font-bold">Misa Jumat Pertama</h2>
+              <div>
+                <h3 className="text-lg font-semibold">Hari Jumat Minggu Pertama</h3>
+                <li className="list-disc">19.00 WIB</li>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="flex flex-col items-start gap-2">
+              <h2 className="text-lg text-blue-secondary font-bold">Misa Mingguan</h2>
+              <div>
+                <h3 className="text-lg font-semibold">Sabtu</h3>
+                <li className="list-disc">17.00 WIB</li>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold">Minggu</h3>
+                <li className="list-disc">06.00 WIB</li>
+                <li className="list-disc">08.30 WIB</li>
+                <li className="list-disc">17.00 WIB</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const MainContent = () => {
+  return (
+    <div className="w-full">
+      <TentangLingkungan />
+      <JadwalMisa />
     </div>
   )
 }
