@@ -19,7 +19,7 @@ const SectionHeader: FC<SectionHeaderProps> = ({title, subtitle, theme="light"})
   const textColor = theme === "light" ? "text-blue-primary" : "text-neutral-white"
   const lineColor = theme === "light" ? "bg-blue-primary" : "bg-neutral-white"
   return (
-    <div className="flex flex-col items-center gap-4 py-2 mt-4" style={{marginBottom: "7rem"}}>
+    <div className="flex flex-col items-center gap-4 py-2 mt-4 mb-28">
       <div>
         <h1 className={"text-5xl text-center " + textColor}>
           {_title} <span className="font-bold">{highligthed}</span>
@@ -28,7 +28,7 @@ const SectionHeader: FC<SectionHeaderProps> = ({title, subtitle, theme="light"})
           {subtitle}
         </p>
       </div>
-      <div className={"w-14 " + lineColor} style={{height: "6px"}} />
+      <div className={"h-[6px] w-14 " + lineColor} />
     </div>
   )
 }
