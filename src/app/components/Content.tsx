@@ -24,7 +24,12 @@ const TentangLingkungan = () => {
   return (
     <div className="w-full md:h-[75vh] md:max-h-[1140px] flex justify-center">
       <div className="h-full w-[40%] bg-red-500 relative">
-        <Image fill src="https://storage.googleapis.com/margot-web/keling_compress.png" alt="" className="object-cover select-none" />
+        <Image
+          fill
+          src="https://storage.googleapis.com/margot-web/keling_compress.png"
+          alt="Ketua Lingkungan Maria Goretti"
+          priority
+          className="object-cover select-none" />
       </div>
       <div className="w-[60%] bg-blue-primary pl-24 pb-24">
         <div className="h-full w-[85%] max-w-[1280px] flex flex-col justify-end gap-8">
