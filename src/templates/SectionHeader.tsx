@@ -3,6 +3,7 @@ import { FC } from "react";
 interface SectionHeaderProps {
   title: string;
   subtitle?: string;
+  theme?: "light" | "dark"
 }
 
 const constructTitle = (title: string) => {
@@ -13,19 +14,21 @@ const constructTitle = (title: string) => {
   return {_title, highligthed}
 }
 
-const SectionHeader: FC<SectionHeaderProps> = ({title, subtitle}) => {
+const SectionHeader: FC<SectionHeaderProps> = ({title, subtitle, theme="light"}) => {
   const {_title, highligthed} = constructTitle(title)
+  const textColor = theme === "light" ? "text-blue-primary" : "text-neutral-white"
+  const lineColor = theme === "light" ? "bg-blue-primary" : "bg-neutral-white"
   return (
     <div className="flex flex-col items-center gap-4 py-2 mt-4 mb-28">
       <div>
-        <h1 className="text-5xl text-blue-primary text-center">
+        <h1 className={"text-5xl text-center " + textColor}>
           {_title} <span className="font-bold">{highligthed}</span>
         </h1>
-        <p className="text-2xl text-blue-primary text-center">
+        <p className={"text-2xl text-center " + textColor}>
           {subtitle}
         </p>
       </div>
-      <div className="h-[6px] w-14 bg-blue-primary" />
+      <div className={"h-2 w-14 " + lineColor} />
     </div>
   )
 }

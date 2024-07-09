@@ -1,6 +1,48 @@
+import SectionHeader from '@/templates/SectionHeader';
 import {Image} from '@nextui-org/react';
+import { FC, HTMLAttributes } from 'react';
+
+type GalleryImageItemProps = { src: string, index: number}
+const GalleryImageItem: FC<GalleryImageItemProps> = ({ src, index }) => {
+  const hasMargin = index
+  return <Image
+    src={src}
+    isZoomed
+    alt=""
+    classNames={
+      { 
+        wrapper: [hasMargin ? "mt-4" : "mt-0"],
+      }
+    }
+    />
+}
+
 
 const Photos = () => {
+  const baseUrl = "https://storage.googleapis.com/margot-web/"
+  const imgSources = [
+    "tatib1.jpeg",
+    "ziarek1_compressed.jpeg",
+    "ziarek2_compressed.jpeg",
+    "koor_1.jpeg",
+    "hero_thumb_compressed.png",
+    "koor_1.jpeg",
+  ]
+  return (
+    <main className = "w-full flex justify-center bg-neutral-black min-h-screen py-20">
+      <div className='w-[90%]'>
+        <SectionHeader title='Galeri' theme='dark' />
+        <div className='columns-6'>
+          {
+            imgSources.map((imgUrl, i) => <GalleryImageItem key={i} index={i} src={baseUrl + imgUrl} />)
+          }
+        </div>
+      </div>
+    </main>
+  )
+}
+
+const Photos_unused = () => {
   return (
     <div className="bg-white w-full min-h-96 flex justify-center py-20">
       <div className="w-3/4 max-w-[1280px] flex items-center flex-col gap-4">
