@@ -19,7 +19,7 @@ const GalleryImageItem: FC<GalleryImageItemProps> = ({ src, index }) => {
 
 
 const Photos = () => {
-  const baseUrl = "https://storage.googleapis.com/margot-web/"
+  const baseUrl = "/api/static/img/"
   const imgSources = [
     "tatib1.jpeg",
     "ziarek1_compressed.jpeg",
