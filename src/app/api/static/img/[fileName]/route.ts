@@ -1,8 +1,7 @@
-import { NextApiRequest } from "next"
-import { NextResponse } from "next/server"
+import { NextResponse, NextRequest } from "next/server"
 import { Storage } from "@google-cloud/storage"
 
-export const GET = async (req: NextApiRequest) => {
+export const GET = async (req: NextRequest) => {
   const fileName = req.url?.split('/').pop() || ""
   const b_cred = process.env.GOOGLE_CREDENTIALS_BASE64 || ""
 
