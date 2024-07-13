@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google-cloud/storage": "^7.11.3",
     "@nextui-org/react": "^2.4.2",
     "framer-motion": "^11.2.12",
     "next": "14.2.4",
