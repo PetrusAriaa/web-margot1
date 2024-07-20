@@ -22,18 +22,18 @@ const ButtonPrimary: FC<ButtonComponentProps> = ({ width = "full", content}) => 
 
 const TentangLingkungan = () => {
   return (
-    <div className="w-full md:h-[75vh] md:max-h-[1140px] flex justify-center">
-      <div className="h-full w-[40%] bg-red-500 relative">
+    <div className="w-full md:h-[75vh] md:max-h-[1140px] flex justify-center flex-col md:flex-row">
+      <div className="h-full w-full md:w-[40%] min-h-96 relative">
         <Image
           fill
-          src="https://storage.googleapis.com/margot-web/keling_compress.png"
+          src="/api/static/img/keling_compress.png"
           alt="Ketua Lingkungan Maria Goretti"
           priority
           className="object-cover select-none" />
       </div>
-      <div className="w-[60%] bg-blue-primary pl-24 pb-24">
-        <div className="h-full w-[85%] max-w-[1280px] flex flex-col justify-end gap-8">
-          <p className="text-5xl font-bold text-neutral-white leading-tight selection:bg-neutral-white selection:text-blue-primary">
+      <div className="w-full md:w-[60%] bg-blue-primary px-4 sm:pl-24 pb-0 md:pb-24 min-h-screen md:min-h-fit flex items-center">
+        <div className="h-full w-full md:w-[85%] max-w-[1280px] flex flex-col justify-end gap-8">
+          <p className="text-5xl md:text-5xl font-bold text-neutral-white leading-tight selection:bg-neutral-white selection:text-blue-primary">
             &quot;Aku Diberkati, Kamu Diberkati, Kita Semua Diberkati.&quot;
           </p>
           <p className="text-lg text-neutral-white leading-tight selection:bg-neutral-white selection:text-blue-primary">
@@ -48,10 +48,10 @@ const TentangLingkungan = () => {
 
 const JadwalMisa = () => {
   return (
-    <div className="w-full flex justify-center bg-neutral-white h-screen max-h-[1280px] py-20">
+    <div className="w-full flex justify-center bg-neutral-white h-screen max-h-[1280px] py-20 px-4 sm:px-0">
       <div className="w-full max-w-prose h-fit">
         <SectionHeader title="Jadwal Ekaristi" subtitle="Gereja Santo Matias Rasul Kosambi Baru" />
-        <div className="flex flex-row justify-between mb-16">
+        <div className="flex flex-row justify-center gap-4 md:gap-0 md:justify-between mb-16">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col items-start gap-2">
               <h2 className="text-lg text-blue-secondary font-bold">Misa Harian</h2>
@@ -84,13 +84,15 @@ const JadwalMisa = () => {
             </div>
           </div>
         </div>
-        <Button
-          as={Link}
-          href="https://maps.app.goo.gl/do2fUpnL85PaDuzQA"
-          target="_blank"
-          className="rounded w-full text-neutral-white bg-blue-primary">
-          Lokasi Gereja
-        </Button>
+        <div className="flex justify-center">
+          <Button
+            as={Link}
+            href="https://maps.app.goo.gl/do2fUpnL85PaDuzQA"
+            target="_blank"
+            className="rounded w-full text-neutral-white bg-blue-primary max-w-96 md:max-w-full">
+            Lokasi Gereja
+          </Button>
+        </div>
       </div>
     </div>
   )
