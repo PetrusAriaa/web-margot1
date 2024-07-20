@@ -21,10 +21,10 @@ const SectionHeader: FC<SectionHeaderProps> = ({title, subtitle, theme="light"})
   return (
     <div className="flex flex-col items-center gap-4 py-2 mt-4 mb-28">
       <div>
-        <h1 className={"text-5xl text-center " + textColor}>
+        <h1 className={"text-3xl sm:text-5xl text-center " + textColor}>
           {_title} <span className="font-bold">{highligthed}</span>
         </h1>
-        <p className={"text-2xl text-center " + textColor}>
+        <p className={"text-lg sm:text-2xl text-center " + textColor}>
           {subtitle}
         </p>
       </div>
