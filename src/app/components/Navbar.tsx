@@ -12,6 +12,7 @@ import {
 } from "@nextui-org/react";
 import Link from 'next/link'
 import ProfileDropdown from './ProfileDropdown';
+import InformationDropdown from './InformationDropdown';
 import Image from "next/image";
 import { useState } from "react";
 
@@ -88,11 +89,7 @@ const MyNavbar = () => {
           </Link>
         </NavbarItem>
         <ProfileDropdown />
-        <NavbarItem className="hidden lg:block">
-          <button disabled className="text-sm md:text-base disabled:cursor-not-allowed disabled:text-slate-400 flex items-center gap-1 text-blue-primary hover:text-blue-secondary font-medium transition-colors focus:outline-none">
-            INFORMASI
-          </button>
-        </NavbarItem>
+        <InformationDropdown />
         <NavbarItem className="hidden lg:block">
           <button disabled className="text-sm md:text-base disabled:cursor-not-allowed disabled:text-slate-400 flex items-center gap-1 text-blue-primary hover:text-blue-secondary font-medium transition-colors focus:outline-none">
             GALERI
@@ -146,14 +143,28 @@ const MyNavbar = () => {
             </AccordionItem>
           </Accordion>
         </NavbarMenuItem>
+
         <NavbarMenuItem className="w-full border-b border-slate-400 py-2">
-          <Link href="/sejarah"
-            aria-disabled={true}
-            onClick={()=>setMenuOpen(false)}
-            className="relative text-blue-primary hover:text-blue-secondary font-medium transition-colors w-full aria-[disabled=true]:text-slate-500 aria-[disabled=true]:cursor-not-allowed">
-            INFORMASI
-          </Link>
+          <Accordion showDivider data-id='nav-accord' variant='light' fullWidth className="data-[id=nav-accord]:px-0">
+            <AccordionItem title='INFORMASI' classNames={{
+              title: [
+                'text-blue-primary',
+                'hover:text-blue-secondary',
+                'transition-colors',
+                'font-medium',
+              ]
+            }}>
+              <div className="flex flex-col gap-2 pl-4">
+                <Link href="/kontak"
+                  onClick={()=>setMenuOpen(false)}
+                  className="text-blue-primary hover:text-blue-secondary font-medium transition-colors w-fit">
+                  Kontak
+                </Link>
+              </div>
+            </AccordionItem>
+          </Accordion>
         </NavbarMenuItem>
+
         <NavbarMenuItem className="w-full border-b border-slate-400 py-2">
           <Link href="/sejarah"
             aria-disabled={true}
