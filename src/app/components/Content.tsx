@@ -32,7 +32,7 @@ const TentangLingkungan = () => {
           className="object-cover select-none" />
       </div>
       <div className="w-full md:w-[60%] bg-blue-primary px-4 sm:pl-24 pb-0 md:pb-24 min-h-screen md:min-h-fit flex items-center">
-        <div className="h-full w-full md:w-[85%] max-w-[1280px] flex flex-col justify-end gap-8">
+        <div className="h-full w-full md:w-[85%] max-w-[1280px] flex flex-col justify-end gap-8 py-16 md:py-0">
           <p className="text-5xl md:text-5xl font-bold text-neutral-white leading-tight selection:bg-neutral-white selection:text-blue-primary">
             &quot;Aku Diberkati, Kamu Diberkati, Kita Semua Diberkati.&quot;
           </p>
