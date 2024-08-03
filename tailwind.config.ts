@@ -18,6 +18,9 @@ const config: Config = {
         "yellow-accent": "#FFC327",
         "neutral-black": "#0C1837",
         "neutral-white": '#E7EAF3',
+      },
+      screens: {
+        'xs': '300px',
       }
     },
   },

@@ -1,5 +1,6 @@
 import { Image, Divider } from "@nextui-org/react";
 import { Metadata } from "next";
+import PageHeader from "@/templates/PageHeader"
 
 export const metadata: Metadata = {
   title: "Sejarah - Lingkungan St. Maria Goretti Paroki Kosambi Baru",
@@ -9,18 +10,7 @@ export const metadata: Metadata = {
 const SejarahPage = () => {
   return (
     <div className="w-full min-h-screen">
-      <div className='w-full h-[60vh] bg-[url("/api/static/img/Goretti_6July.webp")] bg-cover bg-center'>
-        <div className='w-full h-[60vh] bg-neutral-black/75 flex items-center justify-center'>
-          <div className='w-3/4 max-w-[1024px] flex flex-col items-center text-center'>
-            <div className='flex flex-col gap-4'>
-              <h1 className='text-4xl md:text-5xl font-black text-neutral-white'>Sejarah Lingkungan St. Maria Goretti</h1>
-              {/* <div>
-                <h4 className='text-2xl md:text-4xl text-neutral-white'>Gunakan formulir di bawah ini untuk menghubungi kami dan menentukan janji temu dengan ketua lingkungan.</h4>
-              </div> */}
-            </div>
-          </div>
-        </div>
-      </div>
+      <PageHeader title="Sejarah Lingkungan St. Maria Goretti" image="/img/mariagoretti.png"/>
       <div className="w-full flex justify-center min-h-screen">
         <div className="max-w-prose pt-8 pb-20 px-4">
           {/* <h1 className="text-4xl text-blue-primary font-semibold pb-4">Sejarah Lingkungan St. Maria Goretti</h1>
