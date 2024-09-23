@@ -1,5 +1,6 @@
 import { Image, Divider } from "@nextui-org/react";
 import { Metadata } from "next";
+import PageHeader from "@/templates/PageHeader";
 
 export const metadata: Metadata = {
   title: "Nama Pelindung - Lingkungan St. Maria Goretti Paroki Kosambi Baru",
@@ -8,10 +9,10 @@ export const metadata: Metadata = {
 
 const MariaGorettiPage = () => {
   return (
-    <div className="w-full flex justify-center min-h-screen">
-      <div className="max-w-prose pt-8 pb-20 px-4">
-        <h1 className="text-4xl text-blue-primary font-semibold pb-4">Mengenal Santa Maria Goretti</h1>
-        <Divider orientation="horizontal" />
+    
+    <div className="w-full flex flex-col items-center min-h-screen">
+      <PageHeader title="Mengenal Santa Maria Goretti "/>
+      <div className="max-w-prose pt-2 pb-20 px-4 ">
         <div className="my-4">
           <Image alt="Santa Maria Goretti" title="Santa Maria Goretti" radius="none" src="https://storage.googleapis.com/margot-web/Goretti_6July.webp" />
           <p className="text-center text-sm text-slate-400 italic">Sumber: <a href="https://www.catholicnewsagency.com">www.catholicnewsagency.com</a></p>
