@@ -65,7 +65,7 @@ export default function KontakPage() {
 
                             <div className='flex flex-col'>
                                 <label htmlFor='message' className='text-lg font-semibold mb-2'>Pesan atau Pertanyaan:</label>
-                                <textarea id='message' placeholder='Pesan atau Pertanyaan' className='p-3 border border-neutral-300 rounded-lg' rows='4' required value={formData.message} onChange={handleChange} />
+                                <textarea id='message' placeholder='Pesan atau Pertanyaan' className='p-3 border border-neutral-300 rounded-lg' rows={4} required value={'${formData.message}'} onChange={handleChange} />
                             </div>
                             <button type="submit" className="rounded w-full text-neutral-white bg-blue-primary md:max-w-full py-2">Submit</button>
                         </form>
@@ -74,7 +74,7 @@ export default function KontakPage() {
                     <div className='flex-1'>
                         <div className='w-full h-[400px]'>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6782797837677!2d106.71136270942645!3d-6.173809893787755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f82f762d21e1%3A0x6fa55f3e9b6796e9!2sGereja%20Katolik%20Santo%20Matias%20Rasul%2C%20Kosambi%20Baru!5e0!3m2!1sid!2sid!4v1721630622548!5m2!1sid!2sid"
-                                width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" />
+                                width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" />
                         </div>
                     </div>
                 </div>
